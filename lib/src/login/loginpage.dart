@@ -21,8 +21,18 @@ class _loginpageState extends State<loginpage> {
             Image.asset(
               'assets/img/JETBONLOGO.png',
               width: 200,
-              height: 200,
+              height: 250,
             ),
+            const Text(
+              'conoce todo bogota\n\n',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.black,
+                fontFamily: 'Mexicana',
+              ),
+            ),
+
+
             SizedBox(height: 30), // Añadimos espacio entre la imagen y los campos de texto
             TextField(
               decoration: InputDecoration(

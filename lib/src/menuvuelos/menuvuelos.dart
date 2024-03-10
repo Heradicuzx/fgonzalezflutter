@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fgonzalezflutter/src/hotelesbogota/hotelesbogota.dart';
+import 'package:fgonzalezflutter/src/homepage/homepage.dart';
 
 class menuvuelos extends StatefulWidget {
   const menuvuelos({Key? key}) : super(key: key);
@@ -38,7 +38,7 @@ class _menuvuelosState extends State<menuvuelos> {
                 // Agrega la lógica para navegar a la nueva página aquí
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => hotelesbogota()), // Reemplaza OtraPagina() con la página a la que quieres navegar
+                  MaterialPageRoute(builder: (context) => homepage()), // Reemplaza OtraPagina() con la página a la que quieres navegar
                 );
               },
               child: Text(
@@ -57,7 +57,7 @@ class _menuvuelosState extends State<menuvuelos> {
                 // Agrega la lógica para navegar a la nueva página aquí
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => hotelesbogota()), // Reemplaza OtraPagina() con la página a la que quieres navegar
+                  MaterialPageRoute(builder: (context) => homepage()), // Reemplaza OtraPagina() con la página a la que quieres navegar
                 );
               },
               child: Text(
@@ -76,7 +76,7 @@ class _menuvuelosState extends State<menuvuelos> {
                 // Agrega la lógica para navegar a la nueva página aquí
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => hotelesbogota()), // Reemplaza OtraPagina() con la página a la que quieres navegar
+                  MaterialPageRoute(builder: (context) => homepage()), // Reemplaza OtraPagina() con la página a la que quieres navegar
                 );
               },
               child: Text(
@@ -95,7 +95,7 @@ class _menuvuelosState extends State<menuvuelos> {
                 // Agrega la lógica para navegar a la nueva página aquí
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => hotelesbogota()), // Reemplaza OtraPagina() con la página a la que quieres navegar
+                  MaterialPageRoute(builder: (context) => homepage()), // Reemplaza OtraPagina() con la página a la que quieres navegar
                 );
               },
               child: Text(
@@ -114,7 +114,7 @@ class _menuvuelosState extends State<menuvuelos> {
                 // Agrega la lógica para navegar a la nueva página aquí
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => hotelesbogota()), // Reemplaza OtraPagina() con la página a la que quieres navegar
+                  MaterialPageRoute(builder: (context) => homepage()), // Reemplaza OtraPagina() con la página a la que quieres navegar
                 );
               },
               child: Text(

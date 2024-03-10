@@ -1,6 +1,6 @@
 import 'package:fgonzalezflutter/src/login/loginpage.dart';
 import 'package:flutter/material.dart';
-import 'package:fgonzalezflutter/src/menuhotel/menuhotel.dart';
+import 'package:fgonzalezflutter/src/menuservicios/menuservicios.dart';
 import 'package:fgonzalezflutter/src/utils/MyColors.dart';
 void main() {
   runApp(const MyApp());

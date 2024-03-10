@@ -4,7 +4,7 @@ import 'package:fgonzalezflutter/src/menurestaurante/menurestaurante.dart';
 import 'package:fgonzalezflutter/src/menuvuelos/menuvuelos.dart';
 import 'package:fgonzalezflutter/src/menuguiaturistico/menuguiaturistico.dart';
 import 'package:fgonzalezflutter/src/utils/MyColors.dart';
-import 'package:fgonzalezflutter/src/menuhotel/menuhotel.dart';
+import 'package:fgonzalezflutter/src/menuservicios/menuservicios.dart';
 
 class homepage extends StatefulWidget {
   const homepage({Key? key}) : super(key: key);
@@ -24,17 +24,17 @@ class _homepageState extends State<homepage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 50), // Ajusta la distancia entre el texto y las imágenes
+            SizedBox(height: 1), // Ajusta la distancia entre el texto y las imágenes
 
             Text(
-              'Elige el servicio que quieres adquirir',
+              'Bienvenidos a jetBoom a donde vamos hoy?',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 24.0,
-                fontFamily: 'Mexicana',
+                fontFamily: 'Cocogoose',
               ),
       ),
 
-            SizedBox(height: 80), // Ajusta la distancia entre el texto y las imágenes
+            SizedBox(height: 90), // Ajusta la distancia entre el texto y las imágenes
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -42,15 +42,18 @@ class _homepageState extends State<homepage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => menuhotel()),
+                      MaterialPageRoute(builder: (context) => menuservicios()),
                     );
                   },
                   child: Image.asset(
-                    'assets/img/hotel.jpg',
+                    'assets/img/serviciosf2.jpg',
                     width: 150,
                     height: 150,
                   ),
                 ),
+
+
+
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -59,7 +62,7 @@ class _homepageState extends State<homepage> {
                     );
                   },
                   child: Image.asset(
-                    'assets/img/restaurante.jpg',
+                    'assets/img/albumrf2.jpg',
                     width: 150,
                     height: 150,
                   ),
@@ -78,7 +81,7 @@ class _homepageState extends State<homepage> {
                     );
                   },
                   child: Image.asset(
-                    'assets/img/trnasporte.jpg',
+                    'assets/img/retosf2.jpg',
                     width: 150,
                     height: 150,
                   ),
@@ -91,7 +94,7 @@ class _homepageState extends State<homepage> {
                     );
                   },
                   child: Image.asset(
-                    'assets/img/guiat.jpg',
+                    'assets/img/PQRsf.jpg',
                     width: 150,
                     height: 150,
                   ),
