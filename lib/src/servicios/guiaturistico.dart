@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fgonzalezflutter/src/servicios/lugarturistico.dart';
-import 'package:fgonzalezflutter/src/servicios/guiaturistico.dart';
-import 'package:fgonzalezflutter/src/menuservicios/menuservicios.dart';
 
 class guiaturistico extends StatefulWidget {
   const guiaturistico({Key? key}) : super(key: key);
@@ -11,7 +9,7 @@ class guiaturistico extends StatefulWidget {
 }
 
 class _guiaturisticoState extends State<guiaturistico> {
-  static const fontSizeTitles = 26.90;
+  static const fontSizeTitles = 26.90; // 15.0
 
   @override
   Widget build(BuildContext context) {
@@ -20,12 +18,12 @@ class _guiaturisticoState extends State<guiaturistico> {
         title: const Text("Hoteles"),
       ),
       body: Padding(
-        padding: EdgeInsets.all(1.0), // Ajusta el padding según tus necesidades
+        padding: const EdgeInsets.all(1.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
 
-            SizedBox(height: 15), // Ajusta la distancia entre el texto y las imágenes
+            const SizedBox(height: 15),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -44,16 +42,16 @@ class _guiaturisticoState extends State<guiaturistico> {
                   ),
                 ),
 
-                Text(
+                const Text(
                   'Santiago Gonzalez',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 15.0,
+                  style: TextStyle(fontSize: fontSizeTitles,
                     fontFamily: 'Cocogoose',
                   ),
                 ),
               ],
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -61,7 +59,7 @@ class _guiaturisticoState extends State<guiaturistico> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => lugarturistico()),
+                      MaterialPageRoute(builder: (context) => const lugarturistico()),
                     );
                   },
                   child: Image.asset(
@@ -72,17 +70,17 @@ class _guiaturisticoState extends State<guiaturistico> {
                   ),
                 ),
 
-                Text(
+                const Text(
                   'Cony Quiroga',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 15.0,
+                  style: TextStyle(fontSize: fontSizeTitles,
                     fontFamily: 'Cocogoose',
                   ),
                 ),
               ],
             ),
 
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -90,7 +88,7 @@ class _guiaturisticoState extends State<guiaturistico> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => lugarturistico()),
+                      MaterialPageRoute(builder: (context) => const lugarturistico()),
                     );
                   },
                   child: Image.asset(
@@ -101,17 +99,17 @@ class _guiaturisticoState extends State<guiaturistico> {
                   ),
                 ),
 
-                Text(
+                const Text(
                   'Juan Olaya',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 15.0,
+                  style: TextStyle(fontSize: fontSizeTitles,
                     fontFamily: 'Cocogoose',
                   ),
                 ),
               ],
             ),
 
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -119,7 +117,7 @@ class _guiaturisticoState extends State<guiaturistico> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => lugarturistico()),
+                      MaterialPageRoute(builder: (context) => const lugarturistico()),
                     );
                   },
                   child: Image.asset(
@@ -131,10 +129,10 @@ class _guiaturisticoState extends State<guiaturistico> {
                   ),
                 ),
 
-                Text(
+                const Text(
                   'Nathaly Pastrana',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 15.0,
+                  style: TextStyle(fontSize: fontSizeTitles,
                     fontFamily: 'Cocogoose',
                   ),
                 ),

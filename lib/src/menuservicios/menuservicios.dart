@@ -1,9 +1,6 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:fgonzalezflutter/src/servicios/lugarturistico.dart';
 import 'package:fgonzalezflutter/src/servicios/guiaturistico.dart';
-import 'package:fgonzalezflutter/src/menuservicios/menuservicios.dart';
 
 
 class menuservicios extends StatefulWidget {
@@ -14,7 +11,7 @@ class menuservicios extends StatefulWidget {
 }
 
 class _menuserviciosState extends State<menuservicios> {
-  static const fontSizeTitles = 26.90;
+  static const fontSizeTitles = 26.90; // 24.0
 
   @override
   Widget build(BuildContext context) {
@@ -23,23 +20,23 @@ class _menuserviciosState extends State<menuservicios> {
         title: const Text("Hoteles"),
       ),
       body: Padding(
-        padding: EdgeInsets.all(30.0), // Ajusta el padding según tus necesidades
+        padding: const EdgeInsets.all(30.0), // Ajusta el padding según tus necesidades
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
               children: [
 
 
-                SizedBox(height: 1), // Ajusta la distancia entre el texto y las imágenes
+                const SizedBox(height: 1), // Ajusta la distancia entre el texto y las imágenes
 
-                Text(
+                const Text(
                   'Qué servicio deseas adquirir?',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 24.0,
+                  style: TextStyle(fontSize: fontSizeTitles,
                     fontFamily: 'Cocogoose',
                   ),
                 ),
 
-                SizedBox(height: 90), // Ajusta la distancia entre el texto y las imágenes
+                const SizedBox(height: 90), // Ajusta la distancia entre el texto y las imágenes
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -47,7 +44,7 @@ class _menuserviciosState extends State<menuservicios> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => lugarturistico()),
+                          MaterialPageRoute(builder: (context) => const lugarturistico()),
                         );
                       },
                       child: Image.asset(
@@ -58,7 +55,7 @@ class _menuserviciosState extends State<menuservicios> {
                       ),
                     ),
 
-                    Text(
+                    const Text(
                       'lugares turisticos',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 15.0,
@@ -69,7 +66,7 @@ class _menuserviciosState extends State<menuservicios> {
                 ),
 
 
-                SizedBox(height: 100),
+                const SizedBox(height: 100),
 
 
                 Row(
@@ -79,7 +76,7 @@ class _menuserviciosState extends State<menuservicios> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => guiaturistico()),
+                          MaterialPageRoute(builder: (context) => const guiaturistico()),
                         );
                       },
                       child: Image.asset(
@@ -90,7 +87,7 @@ class _menuserviciosState extends State<menuservicios> {
                       ),
                     ),
 
-                    Text(
+                    const Text(
                       'Guias turísticos',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 15.0,
@@ -101,8 +98,6 @@ class _menuserviciosState extends State<menuservicios> {
                 ),
 
               ],
-
-
         ),
       ),
     );

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fgonzalezflutter/src/homepage/homepage.dart';
-import 'package:fgonzalezflutter/src/utils/MyColors.dart';
 
 class loginpage extends StatefulWidget {
   const loginpage({Key? key}) : super(key: key);
@@ -15,7 +14,7 @@ class _loginpageState extends State<loginpage> {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 150.0),
+        padding: const EdgeInsets.symmetric(horizontal: 40.0, vertical: 150.0),
         child: Column(
           children: [
             Image.asset(
@@ -33,11 +32,11 @@ class _loginpageState extends State<loginpage> {
             ),
 
 
-            SizedBox(height: 30), // Añadimos espacio entre la imagen y los campos de texto
+            const SizedBox(height: 30), // Añadimos espacio entre la imagen y los campos de texto
             TextField(
               decoration: InputDecoration(
                 hintText: 'Correo Electrónico',
-                prefixIcon: Icon(Icons.email),
+                prefixIcon: const Icon(Icons.email),
                 filled: true,
                 fillColor: Colors.grey[200], // Color de fondo del campo de texto
                 border: OutlineInputBorder(
@@ -46,7 +45,7 @@ class _loginpageState extends State<loginpage> {
                 ),
               ),
             ),
-            SizedBox(height: 10), // Añadimos espacio entre los campos de texto
+            const SizedBox(height: 10), // Añadimos espacio entre los campos de texto
             TextField(
               decoration: InputDecoration(
                 hintText: 'Contraseña',
@@ -60,21 +59,21 @@ class _loginpageState extends State<loginpage> {
               ),
               obscureText: true, // Ocultar texto para la contraseña
             ),
-            SizedBox(height: 20), // Añadimos espacio entre el campo de contraseña y el botón
+            const SizedBox(height: 20), // Añadimos espacio entre el campo de contraseña y el botón
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => homepage()),
+                  MaterialPageRoute(builder: (context) => const homepage()),
                 );
               },
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.symmetric(horizontal: 80, vertical: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 15),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
-              child: Text('Ingresar'),
+              child: const Text('Ingresar'),
             ),
           ],
         ),

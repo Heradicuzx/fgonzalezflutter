@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fgonzalezflutter/src/login/loginpage.dart';
 import 'package:fgonzalezflutter/src/menurestaurante/menurestaurante.dart';
 import 'package:fgonzalezflutter/src/menuvuelos/menuvuelos.dart';
 import 'package:fgonzalezflutter/src/menuguiaturistico/menuguiaturistico.dart';
-import 'package:fgonzalezflutter/src/utils/MyColors.dart';
 import 'package:fgonzalezflutter/src/menuservicios/menuservicios.dart';
 
 class homepage extends StatefulWidget {
@@ -24,9 +22,10 @@ class _homepageState extends State<homepage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 1), // Ajusta la distancia entre el texto y las imágenes
+            const SizedBox(height: 1), // Ajusta la distancia entre el texto y las imágenes
 
-            Text(
+            const Text
+            (
               'Bienvenidos a jetBoom a donde vamos hoy?',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 24.0,
@@ -34,7 +33,7 @@ class _homepageState extends State<homepage> {
               ),
       ),
 
-            SizedBox(height: 90), // Ajusta la distancia entre el texto y las imágenes
+            const SizedBox(height: 90), // Ajusta la distancia entre el texto y las imágenes
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -42,7 +41,7 @@ class _homepageState extends State<homepage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => menuservicios()),
+                      MaterialPageRoute(builder: (context) => const menuservicios()),
                     );
                   },
                   child: Image.asset(
@@ -58,7 +57,7 @@ class _homepageState extends State<homepage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => menurestaurante()),
+                      MaterialPageRoute(builder: (context) => const menurestaurante()),
                     );
                   },
                   child: Image.asset(
@@ -69,7 +68,7 @@ class _homepageState extends State<homepage> {
                 ),
               ],
             ),
-            SizedBox(height: 20), // Ajusta la distancia entre las dos filas de imágenes
+            const SizedBox(height: 20), // Ajusta la distancia entre las dos filas de imágenes
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -77,7 +76,7 @@ class _homepageState extends State<homepage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => menuvuelos()),
+                      MaterialPageRoute(builder: (context) => const menuvuelos()),
                     );
                   },
                   child: Image.asset(
@@ -90,7 +89,7 @@ class _homepageState extends State<homepage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => menuguiaturistico()),
+                      MaterialPageRoute(builder: (context) => const menuguiaturistico()),
                     );
                   },
                   child: Image.asset(

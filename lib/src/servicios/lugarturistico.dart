@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fgonzalezflutter/src/servicios/lugarturistico.dart';
-import 'package:fgonzalezflutter/src/servicios/guiaturistico.dart';
-import 'package:fgonzalezflutter/src/menuservicios/menuservicios.dart';
 
 class lugarturistico extends StatefulWidget {
   const lugarturistico({Key? key}) : super(key: key);
@@ -20,12 +17,12 @@ class _lugarturisticoState extends State<lugarturistico> {
         title: const Text("Hoteles"),
       ),
       body: Padding(
-        padding: EdgeInsets.all(1.0), // Ajusta el padding según tus necesidades
+        padding: const EdgeInsets.all(1.0), // Ajusta el padding según tus necesidades
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
 
-            SizedBox(height: 15), // Ajusta la distancia entre el texto y las imágenes
+            const SizedBox(height: 15), // Ajusta la distancia entre el texto y las imágenes
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -33,7 +30,7 @@ class _lugarturisticoState extends State<lugarturistico> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => lugarturistico()),
+                      MaterialPageRoute(builder: (context) => const lugarturistico()),
                     );
                   },
                   child: Image.asset(
@@ -44,16 +41,16 @@ class _lugarturisticoState extends State<lugarturistico> {
                   ),
                 ),
 
-                Text(
+                const Text(
                   'Museo del oro',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 15.0,
+                  style: TextStyle(fontSize: fontSizeTitles,
                     fontFamily: 'Cocogoose',
                   ),
                 ),
               ],
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -61,7 +58,7 @@ class _lugarturisticoState extends State<lugarturistico> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => lugarturistico()),
+                      MaterialPageRoute(builder: (context) => const lugarturistico()),
                     );
                   },
                   child: Image.asset(
@@ -72,17 +69,17 @@ class _lugarturisticoState extends State<lugarturistico> {
                   ),
                 ),
 
-                Text(
+                const Text(
                   'Centro Historico',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 15.0,
+                  style: TextStyle(fontSize: fontSizeTitles,
                     fontFamily: 'Cocogoose',
                   ),
                 ),
               ],
             ),
 
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -90,7 +87,7 @@ class _lugarturisticoState extends State<lugarturistico> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => lugarturistico()),
+                      MaterialPageRoute(builder: (context) => const lugarturistico()),
                     );
                   },
                   child: Image.asset(
@@ -101,17 +98,17 @@ class _lugarturisticoState extends State<lugarturistico> {
                   ),
                 ),
 
-                Text(
+                const Text(
                   'Monserrate',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 15.0,
+                  style: TextStyle(fontSize: fontSizeTitles,
                     fontFamily: 'Cocogoose',
                   ),
                 ),
               ],
             ),
 
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -119,7 +116,7 @@ class _lugarturisticoState extends State<lugarturistico> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => lugarturistico()),
+                      MaterialPageRoute(builder: (context) => const lugarturistico()),
                     );
                   },
                   child: Image.asset(
@@ -130,10 +127,10 @@ class _lugarturisticoState extends State<lugarturistico> {
                   ),
                 ),
 
-                Text(
+                const Text(
                   'Museo Botero',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 15.0,
+                  style: TextStyle(fontSize: fontSizeTitles,
                     fontFamily: 'Cocogoose',
                   ),
                 ),
